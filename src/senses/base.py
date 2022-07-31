@@ -13,15 +13,3 @@ class Sense(ABC):
     @abstractmethod
     def update(self):
         raise NotImplementedError
-
-
-class Smell(Sense):
-    def __init__(self):
-        super().__init__()
-        self.intensity = 0
-
-    def sense(self):
-        return None
-
-    def update(self):
-        self.intensity += 1
